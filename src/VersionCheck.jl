@@ -14,7 +14,6 @@ function dependencyinfo(pkgname::String) :: Union{Pkg.Types.PackageInfo,Nothing}
   try
     Pkg.dependencies()[Pkg.project().dependencies[pkgname]]
   catch ex
-    @error ex
     nothing
   end
 end
@@ -27,7 +26,6 @@ function versioninfo(pkgname::String; url::String = changelog_url) :: Union{JSON
   try
     changelog(url)[:packages][pkgname][:releases][1]
   catch ex
-    @error ex
     nothing
   end
 end
