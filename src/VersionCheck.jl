@@ -43,7 +43,7 @@ function newversion(pkgname::String; show_message = true, url::String = changelo
       @info "
 A new version of $pkgname is available.
 $pkgname version $(vinfo.version) was released on $(vinfo.date).
-You have $(pinfo.version) installed.
+You have version $(pinfo.version) installed.
           "
     end
 
