@@ -40,11 +40,7 @@ function newversion(pkgname::String; show_message = true, url::String = changelo
 
   if pinfo.version < VersionNumber(vinfo[:version])
     if show_message
-      @info "
-A new version of $pkgname is available.
-$pkgname version $(vinfo.version) was released on $(vinfo.date).
-You have version $(pinfo.version) installed.
-          "
+      @info "A new version ($(vinfo.version)) of $pkgname is available. You use version $(pinfo.version)."
     end
 
     true
