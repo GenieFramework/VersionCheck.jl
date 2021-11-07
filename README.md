@@ -4,7 +4,7 @@ Utility package for checking if a new version of a Julia package is available. I
 
 ## Usage
 
-Create a `CHANGELOG.html` file similar to the CHANGELOG_sample.html file included in this package. Host the `CHANGELOG.html` file on a publicly accessible web server.
+Create a `CHANGELOG.html` file similar to the `CHANGELOG_sample.html` file included in this package. Host the `CHANGELOG.html` file on a publicly accessible web server.
 
 In your package, add a check like the following:
 
