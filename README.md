@@ -14,7 +14,10 @@ module MyPackage
 import VersionCheck
 
 function __init__()
-  @async VersionCheck.newversion("MyPackage", url = "<URL to CHANGELOG.html>")
+  try
+    @async VersionCheck.newversion("MyPackage", url = "<URL to CHANGELOG.html>")
+  catch
+  end
 end
 
 end
