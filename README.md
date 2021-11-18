@@ -22,3 +22,6 @@ end
 
 end
 ```
+
+### TODO
+* API to export CHANGELOG.html to CHANGELOG.md
